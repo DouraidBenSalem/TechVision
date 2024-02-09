@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/logo.png</file>
+        <file>img/utilisateur.png</file>
+        <file>img/camera-video.png</file>
+        <file>img/clap.png</file>
+        <file>img/contrat.png</file>
+        <file>img/diffuser.png</file>
+        <file>img/profil.png</file>
+    </qresource>
+</RCC>
