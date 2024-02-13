@@ -1,5 +1,5 @@
-#ifndef FILE1_H
-#define FILE1_H
+#ifndef file1_H
+#define file1_H
 
 #include <QMainWindow>
 
@@ -15,7 +15,12 @@ public:
     file1(QWidget *parent = nullptr);
     ~file1();
 
+private slots:
+
+
 private:
     Ui::file1 *ui;
 };
-#endif // FILE1_H
+
+
+#endif // file1_H

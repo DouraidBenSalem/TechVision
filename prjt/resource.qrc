@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/logo.png</file>
+        <file>img/profil.png</file>
+        <file>img/contenus.png</file>
+        <file>img/contrats.png</file>
+        <file>img/diffusions.png</file>
+        <file>img/employes.png</file>
+        <file>img/equipements.png</file>
+        <file>img/database-add-1.png</file>
+        <file>img/donut-graph.png</file>
+        <file>img/show-layer.png</file>
+    </qresource>
+</RCC>
