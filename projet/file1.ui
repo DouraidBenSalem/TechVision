@@ -453,7 +453,6 @@ display: none;
     <property name="styleSheet">
      <string notr="true">QTabWidget {
     border: none;
-	background: qlineargradient(x1:0, y1:0, x2:0.25, y2:0, stop:0 #5de0e6, stop:1 #2700c1);
 }
 
 QTabBar::tab {
@@ -466,8 +465,19 @@ QTabBar::tab {
 }
 
 QTabBar::tab:first {
-	disabled: true;
-	unselectable: true;
+	 background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #5de0e6, stop:1 #322FC9);
+}
+
+QTabBar::tab:second {
+	
+}
+
+QTabBar::tab:third {
+	
+}
+
+QTabBar::tab:fourth {
+	
 }
 
 QTabBar::tab:selected {
@@ -475,7 +485,7 @@ QTabBar::tab:selected {
 }</string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
