@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>file1</class>
+ <widget class="QMainWindow" name="file1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1300</width>
+    <height>731</height>
+   </rect>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>TV</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/img/img/logo.png</normaloff>:/img/img/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+background:#ffffff;
+font-family:century-gothic;
+font-size:20px;
+}
+QLabel
+{
+background:transparent;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="L1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>201</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #CAF0F8, stop:1 #5de0e6);
+border-bottom-right-radius:100px;
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="L2">
+    <property name="geometry">
+     <rect>
+      <x>201</x>
+      <y>0</y>
+      <width>1101</width>
+      <height>82</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+background: #322FC9
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PB1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>century-gothic</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">* {
+    background: #ffffff;
+    font-family: century-gothic;
+    font-size: 20px;
+}
+
+QLabel {
+    background: transparent;
+}
+
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #2700c1, stop:1 #032174);
+    color: #fefeff;
+    border-top-left-radius: 35px;
+    text-align: left;
+	padding-left: 35px;
+}
+
+QPushButton:focus {
+    background: #fefeff;
+    color: black;
+}
+
+QPushButton:hover {
+    background: #fefeff;
+    color: black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>    Employes</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>300</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>101</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PB2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>269</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">* {
+    background: #ffffff;
+    font-family: century-gothic;
+    font-size: 20px;
+}
+
+QLabel {
+    background: transparent;
+}
+
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #2700c1, stop:1 #032174);
+    color: #fefeff;
+    border-top-left-radius: 35px;
+    text-align: left;
+	padding-left: 35px;
+}
+
+QPushButton:focus {
+    background: #fefeff;
+    color: black;
+}
+
+QPushButton:hover {
+    background: #fefeff;
+    color: black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>    Contenus</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PB4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>448</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>* {
+    background: #ffffff;
+    font-family: century-gothic;
+    font-size: 20px;
+}
+
+QLabel {
+    background: transparent;
+}
+
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #2700c1, stop:1 #032174);
+    color: #fefeff;
+    border-top-left-radius: 35px;
+    text-align: left;
+	padding-left: 35px;
+}
+
+QPushButton:focus {
+    background: #fefeff;
+    color: black;
+}
+
+QPushButton:hover {
+    background: #fefeff;
+    color: black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>    Contrats</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PB5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>546</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">* {
+    background: #ffffff;
+    font-family: century-gothic;
+    font-size: 20px;
+}
+
+QLabel {
+    background: transparent;
+}
+
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #2700c1, stop:1 #032174);
+    color: #fefeff;
+    border-top-left-radius: 35px;
+    text-align: left;
+	padding-left: 35px;
+}
+
+QPushButton:focus {
+    background: #fefeff;
+    color: black;
+}
+
+QPushButton:hover {
+    background: #fefeff;
+    color: black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>    Equipements</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PB3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>358</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>* {
+    background: #ffffff;
+    font-family: century-gothic;
+    font-size: 20px;
+}
+
+QLabel {
+    background: transparent;
+}
+
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #2700c1, stop:1 #032174);
+    color: #fefeff;
+    border-top-left-radius: 35px;
+    text-align: left;
+	padding-left: 35px;
+}
+
+QPushButton:focus {
+    background: #fefeff;
+    color: black;
+}
+
+QPushButton:hover {
+    background: #fefeff;
+    color: black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>    Diffusions</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LB1">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>188</y>
+      <width>50</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">PB1:focus
+{
+display: none;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/img/img/employes.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LB4">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>459</y>
+      <width>42</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/img/img/contrats.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LB3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>370</y>
+      <width>42</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/img/img/diffusions.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LB2">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>278</y>
+      <width>42</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/img/img/contenus.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LB5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>555</y>
+      <width>42</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/img/img/equipements.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pic">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>6</y>
+      <width>70</width>
+      <height>73</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/img/img/profil.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="widget">
+    <property name="geometry">
+     <rect>
+      <x>201</x>
+      <y>0</y>
+      <width>1101</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="sizeIncrement">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::TabFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget {
+    border: none;
+}
+
+QTabBar::tab {
+    background-color: #322FC9;
+    padding: 5px;
+    height: 72px;
+    width: 200px;
+    color: white;
+    font-family: century-gothic;
+
+}
+
+QTabBar::tab:first {
+	 background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #5de0e6, stop:1 #322FC9);
+}
+
+QTabBar::tab:second {
+
+}
+
+QTabBar::tab:third {
+	
+}
+
+QTabBar::tab:fourth {
+	
+}
+
+QTabBar::tab:selected {
+    border-bottom: -5px solid darkgreen;
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>82</width>
+      <height>46</height>
+     </size>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideNone</enum>
+    </property>
+    <property name="documentMode">
+     <bool>false</bool>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="movable">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string/>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="PB6">
+     <attribute name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/img/img/ajout.png</normaloff>:/img/img/ajout.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Ajout </string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>761</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ajouuuuuuuuuuuuuuuuuuterdddddd</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PB7">
+     <attribute name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/img/img/affichage.png</normaloff>:/img/img/affichage.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Affichage</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>80</y>
+        <width>761</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>AFIIIIICHERRRRRRRRRRRRR</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PB8">
+     <attribute name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/img/img/statistiques.png</normaloff>:/img/img/statistiques.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Statistiques</string>
+     </attribute>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>170</y>
+        <width>761</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Guesmi</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="PB0">
+    <property name="geometry">
+     <rect>
+      <x>38</x>
+      <y>10</y>
+      <width>125</width>
+      <height>138</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    border: 0px solid #000; /* Add a border to make the button visible */
+    color: #000; /* Set text color */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/img/img/logo.png</normaloff>:/img/img/logo.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>125</width>
+      <height>138</height>
+     </size>
+    </property>
+   </widget>
+   <zorder>L2</zorder>
+   <zorder>widget</zorder>
+   <zorder>L1</zorder>
+   <zorder>PB1</zorder>
+   <zorder>PB2</zorder>
+   <zorder>PB4</zorder>
+   <zorder>PB5</zorder>
+   <zorder>PB3</zorder>
+   <zorder>LB4</zorder>
+   <zorder>LB3</zorder>
+   <zorder>LB2</zorder>
+   <zorder>LB5</zorder>
+   <zorder>LB1</zorder>
+   <zorder>pic</zorder>
+   <zorder>PB0</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
