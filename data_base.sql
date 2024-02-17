@@ -1,6 +1,3 @@
---------------------------------------------------------
---  File created - Saturday-February-17-2024   
---------------------------------------------------------
 DROP SEQUENCE "DB_name"."EMPLOYE_SEQ";
 DROP SEQUENCE "DB_name"."REFCONTENU_SEQ";
 DROP SEQUENCE "DB_name"."REFCONTRAT_SEQ";
