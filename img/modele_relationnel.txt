@@ -1,7 +1,0 @@
-Employees (IdEmployee, Nom, Prenom, DateDeNaissance, PhotoProfile, Email, Telephone, Genre, DateEmbauche, Salaire, Role)
-Equipements (RefEquipement, Nom, Type, Cout, DateAchat, Disponibilite, Etat, Localisation, DateMaintenance)
-Maintenir (#IdEmployee, #RefEquipement)
-Diffusions (RefDiffusion, Date, TempsDebut, TempsFin, Status, RefcontenuSuivant, RefContenuPrecedent, Etat, #IdEmployee)
-Contenus (RefContenu, Titre, Description, Type, Affiche, LienVideo, Duree, Format, DateProduction, #RefContrat)
-Diffuser (#RefDiffusion, #RefContenu)
-Contrats (RefContrat, Titre, Description, Type, DateDebut, DateFin, Transaction, Budget)
