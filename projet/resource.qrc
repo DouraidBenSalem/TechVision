@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/logo.png</file>
+        <file>img/profil.png</file>
+        <file>img/contenus.png</file>
+        <file>img/contrats.png</file>
+        <file>img/diffusions.png</file>
+        <file>img/employes.png</file>
+        <file>img/equipements.png</file>
+        <file>img/affichage.png</file>
+        <file>img/affichage1.png</file>
+        <file>img/affichage2.png</file>
+        <file>img/ajout.png</file>
+        <file>img/ajout1.png</file>
+        <file>img/ajout2.png</file>
+        <file>img/contenus1.png</file>
+        <file>img/contenus2.png</file>
+        <file>img/contrats1.png</file>
+        <file>img/contrats2.png</file>
+        <file>img/diffusions1.png</file>
+        <file>img/diffusions2.png</file>
+        <file>img/employes1.png</file>
+        <file>img/employes2.png</file>
+        <file>img/equipements1.png</file>
+        <file>img/equipements2.png</file>
+        <file>img/modification.png</file>
+        <file>img/modification1.png</file>
+        <file>img/modification2.png</file>
+        <file>img/statistiques.png</file>
+        <file>img/statistiques1.png</file>
+        <file>img/statistiques2.png</file>
+        <file>img/suppression.png</file>
+        <file>img/suppression1.png</file>
+        <file>img/suppression2.png</file>
+        <file>img/employesbg.png</file>
+    </qresource>
+</RCC>
