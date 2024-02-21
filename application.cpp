@@ -66,3 +66,33 @@ void application::on_PB5_clicked()
     ui->widget5->setCurrentIndex(2);
     ui->PB5->setFocus();
 }
+
+void application::on_EMP_BM_clicked()
+{
+    ui->EMP_Aff->setCurrentIndex(1);
+    ui->PB1->setFocus();
+}
+
+void application::on_CNT_BM_clicked()
+{
+    ui->CNT_Aff->setCurrentIndex(1);
+    ui->PB2->setFocus();
+}
+
+void application::on_DIF_BM_clicked()
+{
+    ui->DIF_Aff->setCurrentIndex(1);
+    ui->PB3->setFocus();
+}
+
+void application::on_CNR_BM_clicked()
+{
+    ui->CNR_Aff->setCurrentIndex(1);
+    ui->PB4->setFocus();
+}
+
+void application::on_EQU_BM_clicked()
+{
+    ui->EQU_Aff->setCurrentIndex(1);
+    ui->PB5->setFocus();
+}

@@ -24,6 +24,16 @@ private slots:
     void on_PB4_clicked();
     void on_PB5_clicked();
 
+    void on_EMP_BM_clicked();
+
+    void on_CNT_BM_clicked();
+
+    void on_DIF_BM_clicked();
+
+    void on_CNR_BM_clicked();
+
+    void on_EQU_BM_clicked();
+
 private:
     Ui::application *ui;
 };

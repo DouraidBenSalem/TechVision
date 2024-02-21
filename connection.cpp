@@ -10,8 +10,8 @@ bool Connection::createconnect()
     bool test=false;
     QSqlDatabase db = QSqlDatabase::addDatabase("QODBC");
     db.setDatabaseName("PRJ");
-    db.setUserName("username");
-    db.setPassword("password");
+    db.setUserName("fares");
+    db.setPassword("123f");
 
     if (db.open())
         test=true;

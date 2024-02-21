@@ -62,7 +62,7 @@ QLabel{
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>5</number>
     </property>
     <widget class="QWidget" name="P0">
      <widget class="QLabel" name="L02">
@@ -77,7 +77,8 @@ QLabel{
       <property name="styleSheet">
        <string notr="true">QLabel
 {
-	background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #5de0e6, stop:1 #322FC9);
+background: #322FC9
+
 }</string>
       </property>
       <property name="text">
@@ -152,7 +153,7 @@ QTabBar::tab:selected {
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>2</number>
       </property>
       <property name="iconSize">
        <size>
@@ -174,7 +175,7 @@ QTabBar::tab:selected {
         <string/>
        </attribute>
       </widget>
-      <widget class="QWidget" name="PB16">
+      <widget class="QWidget" name="EMP_PB1">
        <attribute name="icon">
         <iconset resource="resource.qrc">
          <normaloff>:/img/img/ajout.png</normaloff>
@@ -204,7 +205,7 @@ QTabBar::tab:selected {
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="PB17">
+      <widget class="QWidget" name="EMP_PB2">
        <attribute name="icon">
         <iconset resource="resource.qrc">
          <normaloff>:/img/img/affichage.png</normaloff>
@@ -213,28 +214,78 @@ QTabBar::tab:selected {
        <attribute name="title">
         <string>Affichage       </string>
        </attribute>
-       <widget class="QLabel" name="EMP_L2">
+       <widget class="QStackedWidget" name="EMP_Aff">
         <property name="geometry">
          <rect>
-          <x>150</x>
-          <y>150</y>
-          <width>761</width>
-          <height>231</height>
+          <x>0</x>
+          <y>0</y>
+          <width>1101</width>
+          <height>649</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <pointsize>36</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
+        <property name="currentIndex">
+         <number>0</number>
         </property>
-        <property name="text">
-         <string>Affichage Employe</string>
-        </property>
+        <widget class="QWidget" name="EMP_PB21">
+         <widget class="QLabel" name="EMP_L2">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>150</y>
+            <width>761</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Affichage Employe</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="EMP_BM">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>360</y>
+            <width>511</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Modifier</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="EMP_PB22">
+         <widget class="QLabel" name="EMP_L3">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>150</y>
+            <width>761</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Modifier Employe</string>
+          </property>
+         </widget>
+        </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="PB18">
+      <widget class="QWidget" name="EMP_PB3">
        <attribute name="icon">
         <iconset resource="resource.qrc">
          <normaloff>:/img/img/statistiques.png</normaloff>
@@ -243,7 +294,7 @@ QTabBar::tab:selected {
        <attribute name="title">
         <string>Statistiques</string>
        </attribute>
-       <widget class="QLabel" name="EMP_L3">
+       <widget class="QLabel" name="EMP_L4">
         <property name="geometry">
          <rect>
           <x>150</x>
@@ -330,7 +381,7 @@ QTabBar::tab:selected {
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>2</number>
       </property>
       <property name="iconSize">
        <size>
@@ -347,12 +398,12 @@ QTabBar::tab:selected {
       <property name="tabBarAutoHide">
        <bool>false</bool>
       </property>
-      <widget class="QWidget" name="tab21">
+      <widget class="QWidget" name="tab11_3">
        <attribute name="title">
         <string/>
        </attribute>
       </widget>
-      <widget class="QWidget" name="PB26">
+      <widget class="QWidget" name="CNT_PB1">
        <attribute name="icon">
         <iconset resource="resource.qrc">
          <normaloff>:/img/img/ajout.png</normaloff>
@@ -382,7 +433,7 @@ QTabBar::tab:selected {
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="PB27">
+      <widget class="QWidget" name="CNT_PB2">
        <attribute name="icon">
         <iconset resource="resource.qrc">
          <normaloff>:/img/img/affichage.png</normaloff>
@@ -391,28 +442,78 @@ QTabBar::tab:selected {
        <attribute name="title">
         <string>Affichage       </string>
        </attribute>
-       <widget class="QLabel" name="CNT_L2">
+       <widget class="QStackedWidget" name="CNT_Aff">
         <property name="geometry">
          <rect>
-          <x>150</x>
-          <y>150</y>
-          <width>761</width>
-          <height>231</height>
+          <x>0</x>
+          <y>0</y>
+          <width>1101</width>
+          <height>649</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <pointsize>36</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
+        <property name="currentIndex">
+         <number>0</number>
         </property>
-        <property name="text">
-         <string>Affichage Contenu</string>
-        </property>
+        <widget class="QWidget" name="CNT_PB21">
+         <widget class="QLabel" name="CNT_L2">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>150</y>
+            <width>761</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Affichage Contenu</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="CNT_BM">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>360</y>
+            <width>511</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Modifier</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="CNT_PB22">
+         <widget class="QLabel" name="CNT_L3">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>150</y>
+            <width>761</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Modifier Contenu</string>
+          </property>
+         </widget>
+        </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="PB28">
+      <widget class="QWidget" name="CNT_PB3_2">
        <attribute name="icon">
         <iconset resource="resource.qrc">
          <normaloff>:/img/img/statistiques.png</normaloff>
@@ -421,7 +522,7 @@ QTabBar::tab:selected {
        <attribute name="title">
         <string>Statistiques</string>
        </attribute>
-       <widget class="QLabel" name="CNT_L3">
+       <widget class="QLabel" name="CNT_L4">
         <property name="geometry">
          <rect>
           <x>150</x>
@@ -508,7 +609,7 @@ QTabBar::tab:selected {
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <property name="iconSize">
        <size>
@@ -525,12 +626,12 @@ QTabBar::tab:selected {
       <property name="tabBarAutoHide">
        <bool>false</bool>
       </property>
-      <widget class="QWidget" name="tab31">
+      <widget class="QWidget" name="tab33">
        <attribute name="title">
         <string/>
        </attribute>
       </widget>
-      <widget class="QWidget" name="PB36">
+      <widget class="QWidget" name="DIF_PB1">
        <attribute name="icon">
         <iconset resource="resource.qrc">
          <normaloff>:/img/img/ajout.png</normaloff>
@@ -560,7 +661,7 @@ QTabBar::tab:selected {
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="PB37">
+      <widget class="QWidget" name="DIF_PB2">
        <attribute name="icon">
         <iconset resource="resource.qrc">
          <normaloff>:/img/img/affichage.png</normaloff>
@@ -569,28 +670,78 @@ QTabBar::tab:selected {
        <attribute name="title">
         <string>Affichage       </string>
        </attribute>
-       <widget class="QLabel" name="DIF_L2">
+       <widget class="QStackedWidget" name="DIF_Aff">
         <property name="geometry">
          <rect>
-          <x>150</x>
-          <y>150</y>
-          <width>761</width>
-          <height>231</height>
+          <x>0</x>
+          <y>0</y>
+          <width>1101</width>
+          <height>649</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <pointsize>36</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
+        <property name="currentIndex">
+         <number>0</number>
         </property>
-        <property name="text">
-         <string>Affichage Diffusion</string>
-        </property>
+        <widget class="QWidget" name="DIF_PB21">
+         <widget class="QLabel" name="DIF_L2">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>150</y>
+            <width>761</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Affichage Diffusion</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="DIF_BM">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>360</y>
+            <width>511</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Modifier</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="DIF_PB22">
+         <widget class="QLabel" name="DIF_L3">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>150</y>
+            <width>761</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Modifier Diffusion</string>
+          </property>
+         </widget>
+        </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="PB38">
+      <widget class="QWidget" name="DIF_PB3">
        <attribute name="icon">
         <iconset resource="resource.qrc">
          <normaloff>:/img/img/statistiques.png</normaloff>
@@ -599,7 +750,7 @@ QTabBar::tab:selected {
        <attribute name="title">
         <string>Statistiques</string>
        </attribute>
-       <widget class="QLabel" name="DIF_L3">
+       <widget class="QLabel" name="DIF_L4">
         <property name="geometry">
          <rect>
           <x>150</x>
@@ -686,7 +837,7 @@ QTabBar::tab:selected {
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>2</number>
       </property>
       <property name="iconSize">
        <size>
@@ -708,7 +859,7 @@ QTabBar::tab:selected {
         <string/>
        </attribute>
       </widget>
-      <widget class="QWidget" name="PB46">
+      <widget class="QWidget" name="CNR_PB1">
        <attribute name="icon">
         <iconset resource="resource.qrc">
          <normaloff>:/img/img/ajout.png</normaloff>
@@ -738,7 +889,7 @@ QTabBar::tab:selected {
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="PB47">
+      <widget class="QWidget" name="CNR_PB2">
        <attribute name="icon">
         <iconset resource="resource.qrc">
          <normaloff>:/img/img/affichage.png</normaloff>
@@ -747,25 +898,75 @@ QTabBar::tab:selected {
        <attribute name="title">
         <string>Affichage       </string>
        </attribute>
-       <widget class="QLabel" name="CNR_L2">
+       <widget class="QStackedWidget" name="CNR_Aff">
         <property name="geometry">
          <rect>
-          <x>150</x>
-          <y>150</y>
-          <width>761</width>
-          <height>231</height>
+          <x>0</x>
+          <y>0</y>
+          <width>1101</width>
+          <height>649</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <pointsize>36</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
+        <property name="currentIndex">
+         <number>0</number>
         </property>
-        <property name="text">
-         <string>Affichage Contrat</string>
-        </property>
+        <widget class="QWidget" name="CNR_PB21">
+         <widget class="QLabel" name="CNR_L2">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>150</y>
+            <width>761</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Affichage Contrat</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="CNR_BM">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>360</y>
+            <width>511</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Modifier</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="CNR_PB22">
+         <widget class="QLabel" name="EMP_L3_2">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>150</y>
+            <width>761</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Modifier Contrat</string>
+          </property>
+         </widget>
+        </widget>
        </widget>
       </widget>
       <widget class="QWidget" name="PB48">
@@ -777,7 +978,7 @@ QTabBar::tab:selected {
        <attribute name="title">
         <string>Statistiques</string>
        </attribute>
-       <widget class="QLabel" name="CNR_L3">
+       <widget class="QLabel" name="CNR_L4">
         <property name="geometry">
          <rect>
           <x>150</x>
@@ -864,7 +1065,7 @@ QTabBar::tab:selected {
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>2</number>
       </property>
       <property name="iconSize">
        <size>
@@ -881,12 +1082,12 @@ QTabBar::tab:selected {
       <property name="tabBarAutoHide">
        <bool>false</bool>
       </property>
-      <widget class="QWidget" name="tab51">
+      <widget class="QWidget" name="tab33_2">
        <attribute name="title">
         <string/>
        </attribute>
       </widget>
-      <widget class="QWidget" name="PB56">
+      <widget class="QWidget" name="EQU_PB1">
        <attribute name="icon">
         <iconset resource="resource.qrc">
          <normaloff>:/img/img/ajout.png</normaloff>
@@ -916,7 +1117,7 @@ QTabBar::tab:selected {
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="PB57">
+      <widget class="QWidget" name="CNR_PB2_2">
        <attribute name="icon">
         <iconset resource="resource.qrc">
          <normaloff>:/img/img/affichage.png</normaloff>
@@ -925,28 +1126,78 @@ QTabBar::tab:selected {
        <attribute name="title">
         <string>Affichage       </string>
        </attribute>
-       <widget class="QLabel" name="EQU_L2">
+       <widget class="QStackedWidget" name="EQU_Aff">
         <property name="geometry">
          <rect>
-          <x>150</x>
-          <y>150</y>
-          <width>761</width>
-          <height>231</height>
+          <x>0</x>
+          <y>0</y>
+          <width>1101</width>
+          <height>649</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <pointsize>36</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
+        <property name="currentIndex">
+         <number>0</number>
         </property>
-        <property name="text">
-         <string>Affichage Equipement</string>
-        </property>
+        <widget class="QWidget" name="EQU_PB21">
+         <widget class="QLabel" name="EQU_L2">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>150</y>
+            <width>761</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Affichage Equipement</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="EQU_BM">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>360</y>
+            <width>511</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Modifier</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="EQU_PB22">
+         <widget class="QLabel" name="EQU_L3">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>150</y>
+            <width>761</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Modifier Equipement</string>
+          </property>
+         </widget>
+        </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="PB58">
+      <widget class="QWidget" name="EQU_PB3">
        <attribute name="icon">
         <iconset resource="resource.qrc">
          <normaloff>:/img/img/statistiques.png</normaloff>
@@ -955,7 +1206,7 @@ QTabBar::tab:selected {
        <attribute name="title">
         <string>Statistiques</string>
        </attribute>
-       <widget class="QLabel" name="EQU_L3">
+       <widget class="QLabel" name="EQU_L4">
         <property name="geometry">
          <rect>
           <x>150</x>
