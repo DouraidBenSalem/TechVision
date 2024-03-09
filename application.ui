@@ -62,7 +62,7 @@ QLabel{
      </rect>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="P0">
      <widget class="QLabel" name="L02">
@@ -803,6 +803,12 @@ background: #322FC9
         <height>731</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="focusPolicy">
        <enum>Qt::TabFocus</enum>
       </property>
@@ -868,26 +874,681 @@ QTabBar::tab:selected {
        <attribute name="title">
         <string>Ajout              </string>
        </attribute>
-       <widget class="QLabel" name="CNR_L1">
+       <widget class="QLabel" name="label">
         <property name="geometry">
          <rect>
-          <x>150</x>
-          <y>150</y>
-          <width>761</width>
-          <height>231</height>
+          <x>130</x>
+          <y>90</y>
+          <width>110</width>
+          <height>39</height>
          </rect>
         </property>
         <property name="font">
          <font>
-          <pointsize>36</pointsize>
+          <family>Montserrat</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+font-family: 'Montserrat', sans-serif;
+ background-color: #2e28c1;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Titre</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="CTR_titre">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>110</y>
+          <width>121</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+background-color: #65a6fa; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none /* Bordure */
+}
+QLineEdit:focus{
+border-color: red;
+border: border: 2px solid #000000;
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>90</y>
+          <width>110</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+font-family: 'Montserrat', sans-serif;
+ background-color: #2e28c1;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Description</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="CTR_description">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>120</y>
+          <width>161</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTextEdit{
+background-color: #65a6fa; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none /* Bordure */
+}
+QTextEdit:focus{
+border-color: red;
+border: border: 2px solid #000000;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>210</y>
+          <width>110</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+font-family: 'Montserrat', sans-serif;
+ background-color: #2e28c1;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Type</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="CTR_type">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>230</y>
+          <width>121</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* Apply Montserrat font family to QComboBox */
+QComboBox {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #65a6fa; /* Background color of the QComboBox */
+    border-radius: 10px; /* Radius of rounded corners */
+    /* Internal spacing */
+ padding: 5px 10px;
+    border: none; /* Remove border */
+    color: white; /* Text color */
+}
+
+/* Apply styles to the drop-down button */
+
+
+/* Apply styles to the arrow inside the drop-down button */
+
+
+/* Apply styles to the drop-down list */
+QComboBox QAbstractItemView {
+    background-color: #65a6fa; /* Background color of the drop-down list */
+    color: black; /* Text color of the items in the drop-down list */
+    border: none; /* Remove border */
+    selection-background-color: #1e90ff; 
+    border-radius: 20px;/* Background color of the selected item */
+}
+</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>10</width>
+          <height>10</height>
+         </size>
+        </property>
+        <item>
+         <property name="text">
+          <string>Programme</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Publicite</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>330</y>
+          <width>110</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+font-family: 'Montserrat', sans-serif;
+ background-color: #2e28c1;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Date Debut</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="CTR_DD">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>350</y>
+          <width>121</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* Apply Montserrat font family to QDateEdit */
+QDateEdit {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #65a6fa; /* Background color of the QDateEdit */
+    border-radius: 10px; /* Radius of rounded corners */
+    padding: 5px 10px; /* Internal spacing */
+    border: none; /* Remove border */
+    color: white; /* Text color */
+}
+
+/* Apply styles when QDateEdit is focused */
+QDateEdit:focus {
+    border-color: red; /* Border color when focused */
+    border: 2px solid #000000; /* Border style when focused */
+}
+
+/* Apply styles to the QCalendarWidget (pop-up calendar) */
+QCalendarWidget {
+    background-color: black; /* Background color of the pop-up calendar */
+    color: black; /* Text color of the pop-up calendar */
+    border: none; /* Remove border */
+}
+
+/* Apply styles to the QCalendarWidget cells */
+QCalendarWidget QAbstractItemView {
+    background-color: #65a6fa; /* Background color of the cells in the pop-up calendar */
+    color: white; /* Text color of the cells in the pop-up calendar */
+    border: none; /* Remove border */
+}
+
+/* Apply styles to the selected date in the pop-up calendar */
+QCalendarWidget QAbstractItemView::item:selected {
+    background-color: #1e90ff; /* Background color of the selected date */
+}
+</string>
+        </property>
+        <property name="dateTime">
+         <datetime>
+          <hour>0</hour>
+          <minute>0</minute>
+          <second>0</second>
+          <year>2024</year>
+          <month>1</month>
+          <day>1</day>
+         </datetime>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>90</y>
+          <width>110</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+font-family: 'Montserrat', sans-serif;
+ background-color: #2e28c1;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Date Debut</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="CTR_DF">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>110</y>
+          <width>121</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* Apply Montserrat font family to QDateEdit */
+QDateEdit {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #65a6fa; /* Background color of the QDateEdit */
+    border-radius: 10px; /* Radius of rounded corners */
+    padding: 5px 10px; /* Internal spacing */
+    border: none; /* Remove border */
+    color: white; /* Text color */
+}
+
+/* Apply styles when QDateEdit is focused */
+QDateEdit:focus {
+    border-color: red; /* Border color when focused */
+    border: 2px solid #000000; /* Border style when focused */
+}
+
+/* Apply styles to the QCalendarWidget (pop-up calendar) */
+QCalendarWidget {
+    background-color: black; /* Background color of the pop-up calendar */
+    color: black; /* Text color of the pop-up calendar */
+    border: none; /* Remove border */
+}
+
+/* Apply styles to the QCalendarWidget cells */
+QCalendarWidget QAbstractItemView {
+    background-color: #65a6fa; /* Background color of the cells in the pop-up calendar */
+    color: white; /* Text color of the cells in the pop-up calendar */
+    border: none; /* Remove border */
+}
+
+/* Apply styles to the selected date in the pop-up calendar */
+QCalendarWidget QAbstractItemView::item:selected {
+    background-color: #1e90ff; /* Background color of the selected date */
+}
+</string>
+        </property>
+        <property name="dateTime">
+         <datetime>
+          <hour>0</hour>
+          <minute>0</minute>
+          <second>0</second>
+          <year>2024</year>
+          <month>1</month>
+          <day>1</day>
+         </datetime>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>210</y>
+          <width>110</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+font-family: 'Montserrat', sans-serif;
+ background-color: #2e28c1;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Transaction</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="CTR_checkBox">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>240</y>
+          <width>41</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
           <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox{
+background-color: #65a6fa;
+color: white;
+}</string>
+        </property>
         <property name="text">
-         <string>Ajout Contrat</string>
+         <string>+</string>
         </property>
        </widget>
+       <widget class="QCheckBox" name="CTR_checkBox_2">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>240</y>
+          <width>41</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox{
+background-color: #65a6fa;
+color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>-</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>330</y>
+          <width>110</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+font-family: 'Montserrat', sans-serif;
+ background-color: #2e28c1;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Budget</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="CTR_Budget">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>350</y>
+          <width>121</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+background-color: #65a6fa; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none /* Bordure */
+}
+QLineEdit:focus{
+border-color: red;
+border: border: 2px solid #000000;
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CTR_ajout">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>500</y>
+          <width>121</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+font-family: 'Montserrat', sans-serif;
+background-color: #322FC9; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none ;
+color: white;}
+QPushButton:focus{
+   background-color:white;
+}
+QPushButton:hover {
+    background: #fefeff;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string>Ajouter</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/img/img/ajout.png</normaloff>:/img/img/ajout.png</iconset>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Renitialiser">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>500</y>
+          <width>121</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+font-family: 'Montserrat', sans-serif;
+background-color: #322FC9; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none;
+ color: white; }
+QPushButton:focus{
+   background-color:white;
+}
+QPushButton:hover {
+    background: #fefeff;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string>Renitialiser</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="border">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>30</y>
+          <width>1011</width>
+          <height>561</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+border:4px solid#2e28c1;;
+
+
+border-radius: 20px;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>230</y>
+          <width>121</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+font-family: 'Montserrat', sans-serif;
+ background-color: #65a6fa;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>border</zorder>
+       <zorder>label_10</zorder>
+       <zorder>CTR_DF</zorder>
+       <zorder>CTR_titre</zorder>
+       <zorder>CTR_Budget</zorder>
+       <zorder>CTR_description</zorder>
+       <zorder>label_2</zorder>
+       <zorder>label_9</zorder>
+       <zorder>label_15</zorder>
+       <zorder>CTR_checkBox</zorder>
+       <zorder>CTR_checkBox_2</zorder>
+       <zorder>label_16</zorder>
+       <zorder>CTR_ajout</zorder>
+       <zorder>Renitialiser</zorder>
+       <zorder>CTR_type</zorder>
+       <zorder>CTR_DD</zorder>
+       <zorder>label</zorder>
+       <zorder>label_3</zorder>
+       <zorder>label_4</zorder>
       </widget>
       <widget class="QWidget" name="CNR_PB2">
        <attribute name="icon">
@@ -911,61 +1572,779 @@ QTabBar::tab:selected {
          <number>0</number>
         </property>
         <widget class="QWidget" name="CNR_PB21">
-         <widget class="QLabel" name="CNR_L2">
+         <widget class="QPushButton" name="CNR_Modif">
           <property name="geometry">
            <rect>
-            <x>150</x>
-            <y>150</y>
-            <width>761</width>
-            <height>231</height>
+            <x>260</x>
+            <y>30</y>
+            <width>81</width>
+            <height>41</height>
            </rect>
           </property>
-          <property name="font">
-           <font>
-            <pointsize>36</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>Affichage Contrat</string>
-          </property>
-         </widget>
-         <widget class="QPushButton" name="CNR_BM">
-          <property name="geometry">
-           <rect>
-            <x>300</x>
-            <y>360</y>
-            <width>511</width>
-            <height>131</height>
-           </rect>
+          <property name="styleSheet">
+           <string notr="true">/* Default style for QPushButton */
+QPushButton {
+    background-color: #2e28c1; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 5px 10px; /* Padding */
+}
+
+/* Style for QPushButton when focused */
+QPushButton:focus {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #2e28c1, stop:1 #594ecf); /* Gradient background */
+}
+</string>
           </property>
           <property name="text">
            <string>Modifier</string>
           </property>
          </widget>
-        </widget>
-        <widget class="QWidget" name="CNR_PB22">
-         <widget class="QLabel" name="EMP_L3_2">
+         <widget class="QTableView" name="tab_Contrat">
           <property name="geometry">
            <rect>
-            <x>150</x>
+            <x>200</x>
             <y>150</y>
-            <width>761</width>
-            <height>231</height>
+            <width>821</width>
+            <height>411</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QTableView {
+    /* Styles pour le QTableView */
+
+    background-color: #FFFFFF; /* Couleur de fond */
+    color: #333333; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 10px; /* Coins arrondis */
+    selection-background-color: #E0E0E0; /* Couleur de fond de la sélection */
+
+
+}
+/* Désactiver les marqueurs de scroll */
+QTableView::indicator {
+    width: 0;
+    height: 0;
+}
+
+/* Désactiver les points de sélection */
+QTableView::item:selected {
+    background-color: transparent;
+}
+
+
+/* Styles pour les en-têtes de colonne */
+QHeaderView::section {
+    background-color: #322FC9; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    padding: 8px; /* Espacement intérieur */
+    border-top-left-radius: 10px; /* Coin arrondi supérieur gauche */
+    border-top-right-radius: 10px; /* Coin arrondi supérieur droit */
+}
+
+/* Styles pour les lignes paires */
+QTableView::item:nth-child(even) {
+    background-color: #F8F8F8; /* Couleur de fond des lignes paires */
+}
+
+/* Styles pour les lignes impaires */
+QTableView::item:nth-child(odd) {
+    background-color: #FFFFFF; /* Couleur de fond des lignes impaires */
+}
+
+/* Styles pour la sélection */
+QTableView::item:selected {
+    background-color: #B0C4DE; /* Couleur de fond de la sélection */
+    color: #000000; /* Couleur du texte de la sélection */
+}
+/* Styles pour la barre de défilement horizontale du QTableView */
+/* Styles pour la barre de défilement horizontale du QTableView */
+QScrollBar:horizontal {
+    background: transparent;
+    height: 10px;
+    margin: 0px 20px 0px 20px;
+}
+
+/* Bouton gauche de la barre de défilement horizontale */
+QScrollBar:horizontal::sub-line {
+    border: none;
+    background: transparent;
+    width: 20px;
+}
+
+/* Bouton droit de la barre de défilement horizontale */
+QScrollBar:horizontal::add-line {
+    border: none;
+    background: transparent;
+    width: 20px;
+}
+
+/* Barre de défilement horizontale */
+QScrollBar:horizontal::handle {
+    background: #888888;
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Barre de défilement horizontale au survol */
+QScrollBar:horizontal::handle:hover {
+    background: #666666;
+}
+
+/* Coins arrondis de la barre de défilement */
+QScrollBar::handle:horizontal {
+    border-radius: 5px;
+}
+
+/* Coins arrondis des boutons */
+QScrollBar::sub-line:horizontal,
+QScrollBar::add-line:horizontal {
+    border-radius: 5px;
+}
+/* Changer la couleur de fond du scroll horizontal */
+QTableView::horizontalScrollBar {
+    background-color: #FFFFFF; /* Remplacez cette couleur par la couleur souhaitée */
+}
+
+/* Changer la couleur de fond des points de sélection */
+/* Masquer les points de sélection */
+QTableView::item:selected {
+    background-color: transparent;
+}
+
+/* Changer la couleur de fond du scroll horizontal */
+
+/* Changer la couleur de fond du scroll horizontal */</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="CTR_supprimer">
+          <property name="geometry">
+           <rect>
+            <x>840</x>
+            <y>40</y>
+            <width>81</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+                      background-color: #2e28c1;
+                      color: white; 
+                      border: none;
+                      padding: 5px 10px;
+                      };</string>
+          </property>
+          <property name="text">
+           <string>Supprimer</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="CNR_line_supp">
+          <property name="geometry">
+           <rect>
+            <x>710</x>
+            <y>49</y>
+            <width>113</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="accessibleName">
+           <string/>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+background-color: #65a6fa; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none /* Bordure */
+}
+QLineEdit:focus{
+border-color: red;
+border: border: 2px solid #000000;
+}
+</string>
+          </property>
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="CNR_Recherche">
+          <property name="geometry">
+           <rect>
+            <x>372</x>
+            <y>39</y>
+            <width>261</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+background-color: #65a6fa; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none /* Bordure */
+}
+QLineEdit:focus{
+border-color: red;
+border: border: 2px solid #000000;
+}
+</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="CNR_PB22">
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>90</y>
+            <width>91</width>
+            <height>31</height>
            </rect>
           </property>
           <property name="font">
            <font>
-            <pointsize>36</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+ background-color: #2e28c1;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+          </property>
+          <property name="text">
+           <string>TITRE</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>100</y>
+            <width>113</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+background-color: #65a6fa; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none /* Bordure */
+}
+QLineEdit:focus{
+border-color: red;
+border: border: 2px solid #000000;
+}
+</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>180</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+ background-color: #2e28c1;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+          </property>
+          <property name="text">
+           <string>TYPE</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="CTR_type_2">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>190</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QComboBox{
+background-color: #65a6fa; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none /* Bordure */
+   
+}
+QComboBox:focus{
+border-color: red;
+border: border: 2px solid #000000;
+}
+</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Programme</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Publicite</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>280</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+ background-color: #2e28c1;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+          </property>
+          <property name="text">
+           <string>Date Debut</string>
+          </property>
+         </widget>
+         <widget class="QDateEdit" name="CTR_DD_3">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>290</y>
+            <width>110</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QDateEdit{
+background-color: #65a6fa; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none /* Bordure */
+}
+QDateEdit:focus{
+border-color: red;
+border: border: 2px solid #000000;
+}
+</string>
+          </property>
+          <property name="dateTime">
+           <datetime>
+            <hour>0</hour>
+            <minute>0</minute>
+            <second>0</second>
+            <year>2024</year>
+            <month>1</month>
+            <day>1</day>
+           </datetime>
+          </property>
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>90</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+ background-color: #2e28c1;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+          </property>
+          <property name="text">
+           <string>Date Fin</string>
+          </property>
+         </widget>
+         <widget class="QDateEdit" name="CTR_DF_3">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>100</y>
+            <width>110</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QDateEdit{
+background-color: #65a6fa; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none /* Bordure */
+}
+QDateEdit:focus{
+border-color: red;
+border: border: 2px solid #000000;
+}
+</string>
+          </property>
+          <property name="dateTime">
+           <datetime>
+            <hour>0</hour>
+            <minute>0</minute>
+            <second>0</second>
+            <year>2024</year>
+            <month>1</month>
+            <day>1</day>
+           </datetime>
+          </property>
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>180</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+ background-color: #2e28c1;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+          </property>
+          <property name="text">
+           <string>Transaction</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="CTR_checkBox_5">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>190</y>
+            <width>41</width>
+            <height>18</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
             <weight>75</weight>
             <bold>true</bold>
            </font>
           </property>
           <property name="text">
-           <string>Modifier Contrat</string>
+           <string>+</string>
           </property>
          </widget>
+         <widget class="QCheckBox" name="CTR_checkBox_6">
+          <property name="geometry">
+           <rect>
+            <x>620</x>
+            <y>190</y>
+            <width>41</width>
+            <height>18</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_12">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>280</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+ background-color: #2e28c1;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+          </property>
+          <property name="text">
+           <string>BUDGET</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>290</y>
+            <width>113</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+background-color: #65a6fa; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none /* Bordure */
+}
+QLineEdit:focus{
+border-color: red;
+border: border: 2px solid #000000;
+}
+</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_13">
+          <property name="geometry">
+           <rect>
+            <x>820</x>
+            <y>90</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+ background-color: #2e28c1;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+          </property>
+          <property name="text">
+           <string>Description</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="CTR_description_3">
+          <property name="geometry">
+           <rect>
+            <x>900</x>
+            <y>100</y>
+            <width>161</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QTextEdit{
+background-color: #65a6fa; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none /* Bordure */
+}
+QTextEdit:focus{
+border-color: red;
+border: border: 2px solid #000000;
+}
+</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="CTR_modif_2">
+          <property name="geometry">
+           <rect>
+            <x>450</x>
+            <y>560</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{background-color: #322FC9; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none }
+QPushButton:focus{
+   background-color:white;
+}
+QPushButton:hover {
+    background: #fefeff;
+    color: black;
+}</string>
+          </property>
+          <property name="text">
+           <string>MODIFIER</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="CTR_annuler">
+          <property name="geometry">
+           <rect>
+            <x>630</x>
+            <y>560</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{background-color: #322FC9; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none }
+QPushButton:focus{
+   background-color:white;
+}
+QPushButton:hover {
+    background: #fefeff;
+    color: black;
+}</string>
+          </property>
+          <property name="text">
+           <string>Annuler</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_8">
+          <property name="geometry">
+           <rect>
+            <x>410</x>
+            <y>20</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+ background-color: #2e28c1;
+border-radius: 10px; /* Rayon des coins arrondis */
+    padding: 10px;
+color: white;
+}</string>
+          </property>
+          <property name="text">
+           <string>REF</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>490</x>
+            <y>30</y>
+            <width>113</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+background-color: #65a6fa; /* Couleur de fond du QLineEdit */
+    border-radius: 10px; /* Rayon des coins arrondis */
+   padding: 5px 10px;  /* Espacement interne */
+    border: none /* Bordure */
+}
+QLineEdit:focus{
+border-color: red;
+border: border: 2px solid #000000;
+}
+</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <zorder>lineEdit_3</zorder>
+         <zorder>CTR_description_3</zorder>
+         <zorder>lineEdit_2</zorder>
+         <zorder>CTR_DF_3</zorder>
+         <zorder>CTR_DD_3</zorder>
+         <zorder>CTR_type_2</zorder>
+         <zorder>lineEdit</zorder>
+         <zorder>label_5</zorder>
+         <zorder>label_6</zorder>
+         <zorder>label_7</zorder>
+         <zorder>label_11</zorder>
+         <zorder>label_19</zorder>
+         <zorder>CTR_checkBox_5</zorder>
+         <zorder>CTR_checkBox_6</zorder>
+         <zorder>label_12</zorder>
+         <zorder>label_13</zorder>
+         <zorder>CTR_modif_2</zorder>
+         <zorder>CTR_annuler</zorder>
+         <zorder>label_8</zorder>
         </widget>
        </widget>
       </widget>
@@ -978,26 +2357,35 @@ QTabBar::tab:selected {
        <attribute name="title">
         <string>Statistiques</string>
        </attribute>
-       <widget class="QLabel" name="CNR_L4">
+<<<<<<< HEAD
+       <widget class="QTableView" name="Aff_Contrat">
         <property name="geometry">
          <rect>
-          <x>150</x>
-          <y>150</y>
-          <width>761</width>
-          <height>231</height>
+          <x>120</x>
+          <y>60</y>
+          <width>531</width>
+          <height>401</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <pointsize>36</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Stat Contrat</string>
+        <property name="styleSheet">
+         <string notr="true">border:none;</string>
         </property>
        </widget>
+       <widget class="QTableView" name="tableView_2">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>50</y>
+          <width>531</width>
+          <height>401</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:none;</string>
+        </property>
+       </widget>
+=======
+>>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73
       </widget>
      </widget>
     </widget>

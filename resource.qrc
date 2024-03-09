@@ -33,5 +33,8 @@
         <file>img/suppression1.png</file>
         <file>img/suppression2.png</file>
         <file>img/employesbg.png</file>
+        <file>img/down.png</file>
+        <file>img/add.png</file>
+        <file>img/search.png</file>
     </qresource>
 </RCC>
