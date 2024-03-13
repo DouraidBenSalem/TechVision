@@ -3,6 +3,13 @@
 
 #include <QMainWindow>
 #include <QButtonGroup>
+#include<QtCharts>
+#include <QChart>
+#include <QChartView>
+#include <QtCharts/QChartView>
+#include <QtCharts/QChartView>
+#include <QtCharts/QPieSeries>
+#include <QtCharts/QPieSlice>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class application; }
@@ -37,43 +44,39 @@ private slots:
 
     void on_CTR_ajout_clicked();
 
-    void on_lineEdit_5_textChanged(const QString &arg1);
+   void supprimerLigne(const QModelIndex &index) ;
 
-    void on_lineEdit_4_editingFinished();
+    void on_CTR_ajout_3_clicked();
 
-    void on_CTR_modif_2_clicked();
+    void on_CTR_ajout_4_clicked();
 
-    void on_CTR_supprimer_clicked();
+    void on_CNR_Modif_2_clicked();
 
-    void on_Renitialiser_clicked();
+    void retrieveContractData();
 
-<<<<<<< HEAD
 
 
     void showError(const QString &fieldName);
     void on_widget4_currentChanged(int index);
-=======
-    void on_CTR_annuler_clicked();
->>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73
 
-    void on_pushButton_2_clicked();
+
 
 
 
     void on_lineEdit_4_editingFinished();
 
+    void on_CNR_Recherche_textChanged(const QString &arg1);
+
+    void on_CTR_Renitialiser_clicked();
+
 private:
     Ui::application *ui;
-<<<<<<< HEAD
     void displayContractStatistics();
     void displayContractStatisticsGain();
     void createPieChartGain();
     QChartView *chartView;
         void createPieChart();
         bool animationEnabled;
-=======
-
->>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73
 };
 
 

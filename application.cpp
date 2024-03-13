@@ -12,7 +12,7 @@
 #include <QMap>
 #include<QSqlError>
 #include <QSqlQuery>
-
+#include <QPieSlice>
 
 
 
@@ -20,16 +20,16 @@ application::application(QWidget *parent)
     : QMainWindow(parent),
       ui(new Ui::application),animationEnabled(false)
 {
-<<<<<<< HEAD
      createPieChart();
 
 
-=======
->>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73
     ui->setupUi(this);
     ui->tab_Contrat->verticalHeader()->setVisible(false);
     ui->tab_Contrat->viewport()->update();
+
+
     ui->stackedWidget->setCurrentIndex(0);
+
     ui->widget1->tabBar()->setTabEnabled(0, false);
     ui->widget2->tabBar()->setTabEnabled(0, false);
     ui->widget3->tabBar()->setTabEnabled(0, false);
@@ -119,8 +119,12 @@ void application::on_CNR_Modif_clicked()
 
     ui->PB4->setFocus();
     QModelIndex index = ui->tab_Contrat->selectionModel()->currentIndex();
+
+    // Vérifiez si un élément est sélectionné
     if (index.isValid()) {
+        // Récupérez l'ID ou l'indice de la ligne sélectionnée
         int row = index.row();
+        // Supposez que row est l'indice de la ligne sélectionnée dans votre tableau
         int ref_contrat = ui->tab_Contrat->model()->data(ui->tab_Contrat->model()->index(row, 0)).toInt();
         QString title = ui->tab_Contrat->model()->data(ui->tab_Contrat->model()->index(row, 1)).toString();
         QString description = ui->tab_Contrat->model()->data(ui->tab_Contrat->model()->index(row, 2)).toString();
@@ -144,14 +148,14 @@ void application::on_CNR_Modif_clicked()
         }
         ui->CTR_DD_3->setDate(dateDebut);
         ui->CTR_DF_3->setDate(dateFin);
-
+        // Assuming transaction is a QString indicating the state of the checkbox
         if (transaction == "+") {
-            ui->CTR_checkBox_5->setChecked(true);
+            ui->CTR_checkBox_5->setChecked(true); // Assuming checkBox is the correct pointer to your QCheckBox widget
         } else {
             ui->CTR_checkBox_5->setChecked(false);
         }
         if (transaction == "-") {
-            ui->CTR_checkBox_6->setChecked(true);
+            ui->CTR_checkBox_6->setChecked(true); // Assuming checkBox is the correct pointer to your QCheckBox widget
         } else {
             ui->CTR_checkBox_6->setChecked(false);
         }
@@ -159,7 +163,7 @@ void application::on_CNR_Modif_clicked()
         ui->lineEdit_2->setText(budgetString);
 
     } else {
-
+        // Aucune ligne sélectionnée, affichez un message d'erreur ou avertissement si nécessaire
         QMessageBox::warning(this, "Aucune sélection", "Veuillez sélectionner une ligne à modifier.");
     }
 }
@@ -176,7 +180,7 @@ void showMessage(const QString &title, const QString &message, QWidget *parent =
     msgBox.setText(message);
     msgBox.setWindowFlags(Qt::FramelessWindowHint);
 
-
+    // Apply basic styles for debugging
      msgBox.setStyleSheet("QMessageBox { background-color: #65a6fa; color: white; border"
                           " }"
                           "QMessageBox QLabel { color: white; font-family: 'Montserrat', sans-serif;font-weight: bold; }"
@@ -188,11 +192,7 @@ void showMessage(const QString &title, const QString &message, QWidget *parent =
 }
 
 void application::on_CTR_ajout_clicked() {
-<<<<<<< HEAD
     // Vérifiez si les champs sont vides
-=======
-
->>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73
     if (ui->CTR_titre->text().isEmpty()) {
         QMessageBox::warning(this, "Champ vide", "Veuillez remplir le champ 'Titre'.");
 
@@ -212,7 +212,6 @@ void application::on_CTR_ajout_clicked() {
             showMessage("Erreur d'ajout", "Au moins une des cases à cocher doit être cochée.", this);
             return;
         }
-<<<<<<< HEAD
     if (ui->CTR_Budget->text().isEmpty()) {
             showMessage("Erreur d'ajout", "Veuillez Entrer Un Budget", this);
             return;
@@ -220,16 +219,6 @@ void application::on_CTR_ajout_clicked() {
     // Vérifiez les autres champs si nécessaire
 
     // Si tous les champs sont remplis, continuez avec l'ajout
-=======
-       QRegExp re("\\d*\\.?\\d+");
-       if (!re.exactMatch(ui->CTR_Budget->text())) {
-           showMessage("Erreur d'ajout", "Le Budget doit être un nombre valide", this);
-           return;
-       }
-
-
-
->>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73
     QString title = ui->CTR_titre->text();
     QString description = ui->CTR_description->toPlainText();
     QString type = ui->CTR_type->currentText();
@@ -243,22 +232,13 @@ void application::on_CTR_ajout_clicked() {
     }
     double budget = ui->CTR_Budget->text().toDouble();
     contrat C(title, description, type, DateDebut, DateFin, transaction, budget);
-<<<<<<< HEAD
     if (C.ajouter_Contrat()) {
         // La fonction ajouter a réussi
-=======
-    if (C.ajouter()) {
-
->>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73
         showMessage("Ajout réussi", "Contrat a été ajouté avec succès.", this);
         ui->widget4->setCurrentIndex(2);
         update();
     } else {
-<<<<<<< HEAD
         // La fonction ajouter a échoué
-=======
-
->>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73
         showMessage("Erreur d'ajout", "Erreur lors de l'ajout de Contrat.", this);
     }
 }
@@ -277,43 +257,8 @@ void application::showError(const QString &fieldName) {
     // Ajoutez d'autres champs si nécessaire
 }
 
-void application::on_lineEdit_5_textChanged(const QString &arg1)
-{
-        QSqlQueryModel *model = new QSqlQueryModel();
-         model->setQuery("SELECT REFCONTRAT, TITRE, DESCRIPTION, TYPE, DATE_DEBUT, DATE_FIN, TRANSACTION , BUDGET  FROM CONTRATS WHERE REFCONTRAT LIKE '%" + arg1 + "%' OR TITRE LIKE '%" + arg1 + "%' OR DESCRIPTION LIKE '%" + arg1 + "%' OR TYPE LIKE '%" + arg1 + "%' OR TRANSACTION LIKE '%" + arg1 + "%' OR BUDGET LIKE '%" + arg1 + "%'");
-         ui->tab_Contrat->setModel(model);
-}
 
-bool application::checkIfIdExists(int id) {
-
-    QSqlQuery query;
-    query.prepare("SELECT COUNT(*) FROM CONTRATS WHERE REFCONTRAT = ?");
-    query.addBindValue(id);
-
-    if (query.exec() && query.next()) {
-        int count = query.value(0).toInt();
-        return count > 0;
-    }
-
-    return false;
-}
-
-void application::on_lineEdit_4_editingFinished()
-{
-    QString text = ui->lineEdit_4->text();
-        if (text.isEmpty()) {
-
-            return;
-        }
-
-        bool idExists = checkIfIdExists(text.toInt());
-        if (!idExists) {
-            QMessageBox::warning(this, "ID Not Found", "The entered ID does not exist in the database.");
-
-        }
-}
-
-void application::on_CTR_modif_2_clicked()
+void application::on_CTR_ajout_3_clicked()
 {
     int ref_contrat = ui->lineEdit_3->text().toInt();
     QString title = ui->lineEdit->text();
@@ -330,12 +275,8 @@ void application::on_CTR_modif_2_clicked()
     }
     double budget = ui->lineEdit_2->text().toDouble();
     contrat C(ref_contrat,title,description,type,DateDebut,DateFin,transaction,budget);
-<<<<<<< HEAD
     if (C.modif_Contrat()) {
             // La fonction ajouter a réussi
-=======
-    if (C.modif()) {
->>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73
 
             QMessageBox::information(this, "Modification réussi", "Contrat a été modifié avec succès.");
             update();
@@ -347,7 +288,6 @@ void application::on_CTR_modif_2_clicked()
         }
 }
 
-<<<<<<< HEAD
 void application::on_CTR_ajout_4_clicked()
 {
     ui->CNR_Aff->setCurrentIndex(0);
@@ -387,32 +327,19 @@ void application::supprimerLigne(const QModelIndex &index) {
     }
 }
 void application::on_CNR_Modif_2_clicked()
-=======
-void application::on_CTR_supprimer_clicked()
->>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73
 {
     int ref_contrat = ui->CNR_line_supp->text().toInt();
     QModelIndex index = ui->tab_Contrat->selectionModel()->currentIndex();
     contrat c;
-<<<<<<< HEAD
     if (checkIfIdExists(ui->CNR_line_supp->text().toInt())){
              c.supprimer_Contrat(ref_contrat);
-=======
-    if (checkIfIdExists(ui->lineEdit_4->text().toInt())){
-             c.supprimer(ref_contrat);
->>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73
     //if (index.isValid()) {
         // Récupérez l'ID ou l'indice de la ligne sélectionnée
         //int row = index.row();
         //int ref_contrat = ui->tab_Contrat->model()->data(ui->tab_Contrat->model()->index(row, 0)).toInt();
     //if (c.supprimer(ref_contrat)){
          QMessageBox::information(this, "Suppression réussi", "Contrat a été supprimé avec succès.");
-<<<<<<< HEAD
         update();}
-=======
-        update();
-         ui->lineEdit_4->clear();}
->>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73
    // }
     else {
         QMessageBox::critical(this, "Erreur de suppression", "Erreur lors de supprimer de contrat.");
@@ -420,7 +347,6 @@ void application::on_CTR_supprimer_clicked()
     //else {
             // Aucune ligne sélectionnée, affichez un message d'erreur ou avertissement si nécessaire
             //QMessageBox::warning(this, "Aucune sélection", "Veuillez sélectionner une ligne à modifier.");}
-<<<<<<< HEAD
 
 }
 
@@ -428,25 +354,17 @@ void application::on_CTR_supprimer_clicked()
 void application::displayContractStatistics(){
     contrat C;
     QMap<QString, int> statistics = C.getContractTypeStatistics();
-=======
-}
 
-void application::on_Renitialiser_clicked()
-{
-    ui->CTR_titre->clear();
-    ui->CTR_description->clear();
-    ui->CTR_checkBox->setChecked(false);
-    ui->CTR_checkBox_2->setChecked(false);
-    ui->CTR_Budget->clear();
-    ui->CTR_DD->setDate(QDate::currentDate());
-    ui->CTR_DF->setDate(QDate::currentDate());
-    ui->CTR_type->setCurrentText(0);
-}
->>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73
+       // Display statistics (e.g., in a message box)
+       QString message = "Contract Statistics:\n";
+       for (auto it = statistics.begin(); it != statistics.end(); ++it) {
+           message += it.key() + ": " + QString::number(it.value()) + "\n";
+       }
 
-void application::on_CTR_annuler_clicked()
+       QMessageBox::information(this, "Contract Statistics", message);
+}
+void application::createPieChart()
 {
-<<<<<<< HEAD
     // Create a pie series and populate it with data
     QPieSeries *series = new QPieSeries();
     series->append("Programme", 30);  // Example data
@@ -599,7 +517,3 @@ void application::on_CTR_Renitialiser_clicked()
     ui->CTR_DF->setDate(QDate::currentDate());
     ui->CTR_type->setCurrentText(0);
 }
-=======
-  ui->CNR_Aff->setCurrentIndex(0);
-}
->>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73

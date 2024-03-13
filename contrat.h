@@ -3,7 +3,11 @@
 #include<QString>
 #include<QDate>
 #include <QSqlQueryModel>
-
+#include <QPieSeries>
+#include <QPieSlice>
+#include <QChart>
+#include <QChartView>
+#include <QtCharts>
 class contrat
 {
 private:
@@ -30,19 +34,11 @@ public:
     void setDateFin(QDate);
     void settransaction(QString);
     void setbudget(double);
-<<<<<<< HEAD
     bool ajouter_Contrat();
     QSqlQueryModel* afficher_Contrat();
     bool modif_Contrat();
     bool supprimer_Contrat(int ref_contrat);
     QMap<QString, int> getContractTypeStatistics();
     QMap<QString, int> getContractGainStatistics();
-=======
-    bool ajouter();
-    QSqlQueryModel* afficher();
-    bool modif();
-    bool supprimer(int ref_contrat);
-
->>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73
 };
 #endif // CONTRAT_H

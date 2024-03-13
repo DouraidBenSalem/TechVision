@@ -114,8 +114,9 @@ bool contrat::supprimer_Contrat(int ref_contrat){
     query.bindValue(":id",ref_contrat);
     return query.exec();
 }
+QMap<QString, int> contrat::getContractTypeStatistics() {
+    QMap<QString, int> statistics;
 
-<<<<<<< HEAD
     QSqlQuery query;
     query.prepare("SELECT COUNT(*) AS count FROM CONTRATS WHERE TYPE = 'Programme'");
     if (query.exec() && query.next()) {
@@ -149,5 +150,3 @@ QMap<QString, int> contrat::getContractGainStatistics() {
 
     return statistics;
 }
-=======
->>>>>>> 0f2cb5c9bf17c2bfae17bd6f7c809abad0d8fb73
